@@ -1,0 +1,619 @@
+/* Styles from the GreenSock website */
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  color: white;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+body {
+  font-family: Georgia, serif;
+}
+.ipsType_right {
+  text-align: right;
+}
+.ipsType_center {
+  text-align: center;
+}
+.cInnerContent {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ipsSpacer_bottom_double {
+  margin-bottom: 30px;
+}
+.ipsGrid {
+  display: inline-block;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ipsGrid::before, .ipsGrid::after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.ipsGrid > [class*="ipsGrid_span"] {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  box-sizing: border-box;
+}
+.ipsGrid > .ipsGrid_span5 {
+  width: 40.42553191489362%;
+}
+.ipsGrid > .ipsGrid_span7 {
+  width: 57.44680851063829%;
+}
+.ipsGrid > [class*="ipsGrid_span"] {
+  float: left;
+  margin-left: 2%;
+}
+.ipsGrid > [class*="ipsGrid_span"]:first-child {
+  margin-left: 0;
+}
+.feature {
+  display: flex;
+  align-items: center;
+}
+.card {
+  margin-bottom: 30px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.featured-image-container .card {
+  padding: 10px;
+  height: 0;
+  padding-bottom: calc(100% - 10px);
+}
+h2.heading_large {
+  font-size: 1.8em;
+}
+img {
+  max-width: 100%;
+}
+
+.header-section {
+  margin: 100px auto;
+}
+
+.gs_reveal {
+  font-style: italic;
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0s;
+}
+/* autres */
+
+#menu{
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  opacity: 0.5;
+  margin: 6px 0;
+}
+
+.mark{
+right: 0;
+bottom: 0;
+list-style: none;
+margin: 0;
+padding: 0;
+position: fixed;
+}
+
+.mark ul{
+  list-style-type : none;
+}
+
+.mark i{
+   color:white;
+}
+
+i{
+  margin: 10px;
+}
+
+.progress-container p{
+  float:left;   
+  display: block;
+  margin-left:25%;
+}
+
+a{
+  color: white;
+}
+
+.progress-container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  width: 100%;
+  background-color: grey;
+  opacity: 0.4;
+}
+
+.progress-bar {
+  height: 8px;
+  background: white;
+  width: 0%;
+}
+
+.content {
+  padding: 100px 0;
+  margin: 50px auto 0 auto;
+  width: 80%;
+}
+
+.mark i:hover{
+  border: 2px solid white;
+}
+/**/
+   * {
+  box-sizing: border-box;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #ddd;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container-time {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container-time::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #ddde;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+.left::after {
+  left: 95;
+}
+
+/*Téléphone*/
+@media only screen and (max-width: 950px) {
+    p {
+    font-size: 15px
+    }
+    .timeline::after {
+    left: 31px;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    opacity: 0.6;
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+    h1{
+    font-size: 40px;
+    }
+    #profile{
+      padding-top: 25%;
+    }
+    #menu{
+      width: 50%;
+      height: 50%;
+    }
+    .mark i{
+      font-size:25px;
+    }
+    .mark{
+      margin-bottom: 25%;
+    }
+  }
+
+@media only screen and (min-width: 950px) {
+    #profile{
+      padding-left: 40%;
+    }
+    body h1{
+      font-size: 50px
+    }
+    .mark{
+      margin-bottom: 25%;
+      margin-right: 5%;
+    }
+   .mark i{
+      font-size:40px;
+    }
+  }
+
+.tubes{
+   text-align: left;
+}
+.tube p{
+  text-align: left;
+  color: black;
+  font-size: 25px;
+}
+
+
+.tube h2{
+  text-decoration: underline;
+}
+   .tube {
+    width: 100%;
+    text-align: left;
+    text-align: center;
+    background-color: grey;
+    opacity: 0.8;
+  }
+
+  .html {
+    width: 80%;
+    background-color: white;}
+
+  .react-native{
+    width: 40%;
+    background-color:white;
+  }
+
+  .css {
+    width: 80%;
+     background-color: white;}
+
+  .js {
+    width: 30%; 
+    background-color: white;}
+
+  .php {
+    width: 65%; 
+    background-color: white;}
+
+  .python{
+    width: 40%;
+   background-color: white;
+   }
+
+  .sql{
+    width: 75%;
+     background-color: white;
+   }
+
+  .java{
+    width: 55%;
+    background-color: white;
+  }
+
+  .c{
+    width: 45%; 
+    background-color: white;
+  }
+
+  /*----------Caroselle-----------*/
+
+img {
+  vertical-align: middle;
+}
+
+/*--------------------Entreprise------------------*/
+
+/* Hide the images by default */
+.slideEntreprise {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursorEntreprise {
+  cursorEntreprise: pointer;
+}
+
+/* NextEntreprise & prevEntrepriseious buttons */
+.prevEntreprise,
+.nextEntreprise {
+  cursorEntreprise: pointer;
+  padding: 16px;
+  margin-top: -50px;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  background-color: grey;
+  opacity: 0.5;
+}
+
+/* Position the "nextEntreprise button" to the right */
+.nextEntreprise {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Number text (1/2 etc) */
+.textEntreprise {
+  color: white;
+  font-size: 12px;
+}
+
+/* Container for image text */
+.captionEntreprise-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row-Entreprise:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columnEntreprises side by side */
+.columnEntreprise {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.imgEntreprise {
+  opacity: 0.6;
+}
+
+.active,
+.imgEntreprise:hover {
+  opacity: 1;
+}
+
+/*---------------------Web-------------------*/
+
+/* Hide the images by default */
+.slideWeb {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursorWeb {
+  cursorWeb: pointer;
+}
+
+/* Next & preWebious buttons */
+.preWeb,
+.nextWeb {
+  cursorWeb: pointer;
+  padding: 16px;
+  margin-top: -50px;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  background-color: grey;
+  opacity: 0.5;
+}
+
+/* Position the "nextWeb button" to the right */
+.nextWeb {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Number text (1/2 etc) */
+.textWeb {
+  color: white;
+  font-size: 12px;
+}
+
+/* Container for image text */
+.captionWeb-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.rowWeb:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columnWebs side by side */
+.columnWeb {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.imgWeb {
+  opacity: 0.6;
+}
+
+.active,
+.imgWeb:hover {
+  opacity: 1;
+}
+
+/*---------------------Desktop-------------------*/
+
+.slideDesktop {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursorDesktop {
+  cursorDesktop: pointer;
+}
+
+/* NextMobile & prevMobileious buttons */
+.prevDesktop,
+.nextDesktop {
+  cursorDesktop: pointer;
+  padding: 16px;
+  margin-top: -50px;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  background-color: grey;
+  opacity: 0.5;
+}
+
+/* Position the "nextMobile button" to the right */
+.nextDesktop {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prevDesktop {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Number text (1/1 etc) */
+.textDesktop {
+  color: white;
+  font-size: 12px;
+}
+
+/* Container for image text */
+.captionDesktop-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.rowDesktop:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columnMobiles side by side */
+.columnDesktop {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.imgDesktop {
+  opacity: 0.6;
+}
+
+.active,
+.imgDesktop:hover {
+  opacity: 1;
+}
+
+/*------------------Mobile--------------------------*/
+.slideMobile {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursorMobile {
+  cursorMobile: pointer;
+}
+
+/* NextMobile & prevMobileious buttons */
+.prevMobile,
+.nextMobile {
+  cursorMobile: pointer;
+  padding: 16px;
+  margin-top: -50px;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  background-color: grey;
+  opacity: 0.5;
+}
+
+/* Position the "nextMobile button" to the right */
+.nextMobile {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prevMobile {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Number text (1/1 etc) */
+.textMobile {
+  color: white;
+  font-size: 12px;
+}
+
+/* Container for image text */
+.captionMobile-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.rowMobile:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columnMobiles side by side */
+.columnMobile {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.imgMobile {
+  opacity: 0.6;
+}
+
+.active,
+.imgMobile:hover {
+  opacity: 1;
+}

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+  <script src="js/animation.js"></script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <link rel="stylesheet" href="css/css-style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>PortFolio</title>
+</head>
+<body>
+    
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+
+  <div id="mark" class="mark">
+    <ul>
+    <li><a href="#showTranslate"><i class="material-icons">g_translate</i></a></li>
+    <li><a href="#presentation"><i class="material-icons">person</i></a></li>
+    <li><a href="#timeline"><i class="material-icons">school</i></a></li>
+    <li><a href="#projet"><i class="material-icons">work</i></a></li>
+    <li><a href="#info"><i class="material-icons">info</i></a></li>
+    </ul>
+  </div>
+
+<div class="content">
+
+  <div class="cInnerContent" style="padding:25%">
+      <h1 class="header-section gs_reveal ipsType_center">Hey, Bonjour</h1>
+  </div>
+<!-- Présentation-->
+  <div class="features" id="presentation">
+      <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
+        <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromLeft">
+          <div class="card" id="profile">
+            <img width="500" src="img/photo-profil.jpg">
+          </div>
+        </div>
+        <div class="ipsGrid_span7 ipsType_left">
+          <h2 class="heading_large gs_reveal">Je m'appelle Pascal Kien</h2>
+          <p class="gs_reveal">Née le 22/03/2001</p>
+          <p class="gs_reveal">Etudiant en Informatique spécialisé dans le développement</p>
+          <p class="gs_reveal">Formation : 2ème BTS SIO option SLAM</p>
+          <a href="kien-eng-pascal-rithi-cv.pdf">Voir CV</a>
+        </div>
+      </div>
+<!-- Parcours-->
+    <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
+        <div class="featured-image-container ipsGrid_span5 gs_reveal" style="margin-left:30%; ">
+          <div class="ipsGrid_span7">
+            <h2 class="heading_large gs_reveal" id="timeline" style="text-decoration: underline;" >Mon Expérience</h2>
+<!-- TimeLine -->
+ <div class="timeline">
+        <div class="container-time left">
+            <div class="contenu">
+                <h2>Juillet 2019</h2>
+                <a
+                    href="http://www.parisetudiant.com/etudiant/resultats/bac-techno/diplome/2019/KIEN_ENG_PASCAL_RITHI_eaa3d3dea19825c01675139588fbde2d.html">Titulaire du Baccalauréat</a>
+            </div>
+        </div>
+        <div class="container-time right">
+            <div class="contenu">
+                <h2>Septembre 2019</h2>
+                <p>1ère BTS SIO option SLAM</p>
+            </div>
+        </div>
+        <div class="container-time left">
+            <div class="contenu">
+                <h2>Décembre 2019 - Juin 2020 </h2>
+                <p><a href="https://reference-bookmark.000webhostapp.com/index.php">Projet Scolaire Bibliothèque PHP/MySQL/JS</a></p>
+            </div>
+        </div>
+        <div class="container-time right">
+            <div class="contenu">
+                <h2>Mars 2020 - Mai 2020</h2>
+                <p>Stage entreprise Bloasis Télétravail</p>
+                  <br>
+                    <a href="exemple-presentation-1.pdf">Développement web d'une entreprise</a>
+            </div>
+        </div>
+        <div class="container-time left">
+            <div class="contenu">
+                <h2>Septembre 2020 - Juin 2021</h2>
+                <p>2ème année IPSSI en BTS SIO option SLAM</p>
+            </div>
+        </div>
+        <div class="container-time right">
+            <div class="contenu">
+               <h2>Mars 2021 - Mai 2021</h2>
+                <a href="http://pascal.okatro.com">Stage entreprise OKATRO TéléTravail</a>
+            </div>
+        </div>
+           <div class="container-time left">
+            <div class="contenu">
+               <h2>Decembre 2020 - Mai 2021</h2>
+                <a href="https://gsbv2.000webhostapp.com/index.php">Projet Scolaire GSB en PHP/MySQL/JS</a>
+            </div>
+        </div>
+               <div class="container-time right">
+            <div class="contenu">
+                <h2>Projet Personel Avril 2021 - Maintenant</h2>
+                <a href="#mobile">Application en Reaact-Native, Back-End Python, Bdd Mongodb</a>
+            </div>
+        </div>
+    </div>
+          </div>
+        </div>
+    </div>
+  </div>
+<!--Diagramme-->
+       <div class="ipsGrid_span7 ipsType_left" style="text-align: center;">
+        <div class="gs_reveal">
+        <div class="tubes" style="text-align:center;">
+          <h2 style="text-decoration: underline;margin-top: 25%;">Compétence Web</h2>
+              <p>HTML</p>
+                <div class="tube">
+                  <div class="skills html"><p>90%</p></div>
+                    </div>
+                    <p>CSS</p>
+                    <div class="tube">
+                      <div class="skills css"><p>80%</div>
+                    </div>
+                      <p>PHP</p>
+                    <div class="tube">
+                        <div class="skills php"><p>65%</div>
+                    </div>
+                      <p>JavaScript</p>
+                    <div class="tube">
+                        <div class="skills js"><p>30%<p></div>
+                    </div>
+                      <p>MySqL</p>
+                    <div class="tube">
+                        <div class="skills sql"><p>75%<p></div>
+                    </div>
+        </div>
+            <div class="gs_reveal">
+                    <hr>
+                       <h2 style="text-decoration: underline;">Compétence Application</h2>
+                    <p>Java</p>
+                    <div class="tube">
+                        <div class="skills java"><p>55%<p></div>
+                    </div>
+                    <p>C</p>
+                    <div class="tube">
+                        <div class="skills c"><p>45%<p></div>
+                    </div>
+                    <p>Python</p>
+                    <div class="tube">
+                        <div class="skills python"><p>40%<p></div>
+                    </div>
+                    <p>React-Native</p>
+                    <div class="tube">
+                        <div class="skills react-native"><p>40%<p></div>
+                    </div>
+            </div>
+                </div>
+          </div>
+        </div>
+ <div class="ipsGrid_span7 ipsType_right" style="text-align: center;" id="projet">
+
+<div class="Web" style="width: 50%;margin-left: 25%">
+  <div class="gs_reveal">
+  <h2 style="text-align:center;text-decoration: underline;">Projet Web</h2>
+  <div class="slideWeb">
+    <div class="textWeb">1 / 2</div>
+    <a href="https://reference-bookmark.000webhostapp.com/index.php"><img src="img/logo-bibliotheque.png" style="width:30%;"></a>
+  </div>
+
+  <div class="slideWeb">
+    <div class="textWeb">2 / 2</div>
+    <a href="http://gsbthococpas.alwaysdata.net/index.php"><img src="img/logo.png" style="width:30%;"></a>
+  </div>
+
+  <a class="preWeb" style="float: left;" onclick="plusWeb(-1)">❮</a>
+  <a class="nextWeb" style="float: right;" onclick="plusWeb(1)">❯</a>
+
+  <div class="captionWeb-container" style="margin-top: 30px;">
+    <p id="captionWeb"></p>
+  </div>
+
+  <div class="rowWeb">
+    <div class="columnWeb">
+      <img class="imgWeb cursorWeb" src="img/logo-bibliotheque.png" style="width:100%" onclick="currentSlideWeb(1)" alt="Bibliothèque ~ Front-End: HTML / CSS / JS ~ Back-End: PHP / MySqL">
+    </div>
+    <div class="columnWeb">
+      <img class="imgWeb cursorWeb" src="img/logo.png" style="width:100%" onclick="currentSlideWeb(2)" alt="GSB ~ Front-End: HTML / CSS / JS ~ Back-End: PHP / MySqL">
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="Desktop" style="width: 50%;margin-left: 25%">
+  <hr>
+  <div class="gs_reveal">
+  <h2 style="text-align:center;text-decoration: underline;">Projet DeskTop</h2>
+  <div class="slideDesktop">
+    <div class="textDesktop">1 / 1</div>
+    <a href="http://gsbthococpas.alwaysdata.net/index.php"><img src="img/logo.png" style="width:30%;"></a>
+  </div>
+
+  <a class="prevDesktop" style="float: left;" onclick="plusDesktop(-1)">❮</a>
+  <a class="nextDesktop" style="float: right;" onclick="plusDesktop(1)">❯</a>
+
+  <div class="captionDesktop-container" style="margin-top: 30px;">
+    <p id="captionDesktop"></p>
+  </div>
+
+  <div class="rowDesktop">
+    <div class="columnDesktop">
+      <img class="imgDesktop cursorDesktop" src="img/logo.png" style="width:100%" onclick="currentSlideDesktop(1)" alt="GSB ~ Front-End: Java/SWING ~ Back-End: MySqL">
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="Mobile" style="width: 50%;margin-left: 25%" id="mobile">
+  <hr>
+    <div class="gs_reveal">
+  <h2 style="text-align:center;text-decoration: underline;">Projet Mobile Veille technologique</h2>
+  <div class="slideMobile">
+    <div class="textMobile">1 / 1</div>
+    <a href="https://github.com/pascal-rithi-ke/MangaInfo"><img src="img/manga-info-logo.png" style="width:100%"></a>
+  </div>
+
+  <a class="prevMobile" style="float: left;" onclick="plusSlidesMobile(-1)">❮</a>
+  <a class="nextMobile" style="float: right;" onclick="plusSlidesMobile(1)">❯</a>
+
+  <div class="captionMobile-container" style="margin-top: 30px;">
+    <p id="captionMobile"></p>
+  </div>
+
+  <div class="rowMobile">
+    <div class="columnMobile">
+      <img class="imgMobile cursorMobile" src="img/manga-info-logo.png" style="width:100%" onclick="currentSlideMobile(1)" alt="Manga.Info à Venir  ~ Front-End: React-Native ~ Back-End: PYTHON / MONGODB">
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="entreprise" style="width: 50%;margin-left: 25%">
+  <hr>
+    <div class="gs_reveal">
+  <h2 style="text-align:center;text-decoration: underline;">En Entreprise</h2>
+  <div class="slideEntreprise">
+    <div class="textEntreprise">1 / 2</div>
+    <a href="exemple-presentation-1.pdf"><img src="img/logo-Bloasis.JPG" style="width:30%;"></a>
+  </div>
+
+  <div class="slideEntreprise">
+    <div class="textEntreprise">2 / 2</div>
+    <a href="exemple-presentation-2.pdf"><img src="img/logo-okatro.png" style="width:30%;"></a>
+  </div>
+    
+  <a class="prevEntreprise" style="float: left;" onclick="plusSlideEntreprises(-1)">❮</a>
+  <a class="nextEntreprise" style="float: right;" onclick="plusSlideEntreprises(1)">❯</a>
+
+  <div class="captionEntreprise-container" style="margin-top: 30px;">
+    <p id="captionEntreprise"></p>
+  </div>
+
+  <div class="row-Entreprise">
+    <div class="columnEntreprise">
+      <img class="imgEntreprise cursorEntreprise" src="img/logo-Bloasis.JPG" style="width:100%" onclick="currentSlideEntreprise(1)" alt="Stage 2 Mois ~ Bloasis ~ Usage CMS ">
+    </div>
+    <div class="columnEntreprise">
+      <a href="http://pascal.okatro.com"><img class="imgEntreprise cursorEntreprise" src="img/logo-okatro.png" style="width:100%" onclick="currentSlideEntreprise(2)" alt="Stage 1,4 Mois ~ Okatro ~ Front-End: HTML/CSS/JS ~ Back-End: PHP ~ Serveur: IIS"></a>
+    </div>
+  </div>
+</div>
+</div>
+<script type="text/javascript">
+  
+/*-----------------Caroselle----------------*/
+
+/*------WEB-----------*/
+var slideIndexWeb = 1;
+showSlidesWeb(slideIndexWeb);
+
+function plusWeb(n) {
+  showSlidesWeb(slideIndexWeb += n);
+}
+
+function currentSlideWeb(n) {
+  showSlidesWeb(slideIndexWeb = n);
+}
+
+function showSlidesWeb(n) {
+  var i;
+  var slides = document.getElementsByClassName("slideWeb");
+  var dots = document.getElementsByClassName("imgWeb");
+  var captionWebText = document.getElementById("captionWeb");
+  if (n > slides.length) {slideIndexWeb = 1}
+  if (n < 1) {slideIndexWeb = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndexWeb-1].style.display = "block";
+  dots[slideIndexWeb-1].className += " active";
+  captionWebText.innerHTML = dots[slideIndexWeb-1].alt;
+}
+
+/*------DeskTop-----------*/
+
+var slideIndexDesktop = 1;
+showSlidesDesktop(slideIndexDesktop);
+
+function plusSlidesDesktop(n) {
+  showSlidesDesktop(slideIndexDesktop += n);
+}
+
+function currentSlideDesktop(n) {
+  showSlidesDesktop(slideIndexDesktop = n);
+}
+
+function showSlidesDesktop(n) {
+  var i;
+  var slides = document.getElementsByClassName("slideDesktop");
+  var dots = document.getElementsByClassName("imgDesktop");
+  var captionDesktopText = document.getElementById("captionDesktop");
+  if (n > slides.length) {slideIndexDesktop = 1}
+  if (n < 1) {slideIndexDesktop = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndexDesktop-1].style.display = "block";
+  dots[slideIndexDesktop-1].className += " active";
+  captionDesktopText.innerHTML = dots[slideIndexDesktop-1].alt;
+}
+
+/*-------Mobile----------*/
+var slideIndexMobile = 1;
+showSlidesMobile(slideIndexMobile);
+
+function plusSlidesMobile(n) {
+  showSlidesMobile(slideIndexMobile += n);
+}
+
+function currentSlideMobile(n) {
+  showSlidesMobile(slideIndexMobile = n);
+}
+
+function showSlidesMobile(n) {
+  var i;
+  var slides = document.getElementsByClassName("slideMobile");
+  var dots = document.getElementsByClassName("imgMobile");
+  var captionMobileText = document.getElementById("captionMobile");
+  if (n > slides.length) {slideIndexMobile = 1}
+  if (n < 1) {slideIndexMobile = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndexMobile-1].style.display = "block";
+  dots[slideIndexMobile-1].className += " active";
+  captionMobileText.innerHTML = dots[slideIndexMobile-1].alt;
+}
+
+/*--------Entreprise--------------*/
+var slideEntrepriseIndex = 1;
+showSlideEntreprises(slideEntrepriseIndex);
+
+function plusSlideEntreprises(n) {
+  showSlideEntreprises(slideEntrepriseIndex += n);
+}
+
+function currentSlideEntreprise(n) {
+  showSlideEntreprises(slideEntrepriseIndex = n);
+}
+
+function showSlideEntreprises(n) {
+  var i;
+  var slideEntreprises = document.getElementsByClassName("slideEntreprise");
+  var dots = document.getElementsByClassName("imgEntreprise");
+  var captionEntrepriseText = document.getElementById("captionEntreprise");
+  if (n > slideEntreprises.length) {slideEntrepriseIndex = 1}
+  if (n < 1) {slideEntrepriseIndex = slideEntreprises.length}
+  for (i = 0; i < slideEntreprises.length; i++) {
+      slideEntreprises[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slideEntreprises[slideEntrepriseIndex-1].style.display = "block";
+  dots[slideEntrepriseIndex-1].className += " active";
+  captionEntrepriseText.innerHTML = dots[slideEntrepriseIndex-1].alt;
+}
+</script>
+  <footer id="info" style="padding: 4%;text-align: center;background:black;color: white;margin-top: 20px;">
+  <div id="showTranslate">
+    <div id="google_translate_element"></div>
+  </div>
+    <p>Contact : 07-81-88-32-13</p> 
+    <p>Email: pascal.rithi@gmail.com</p>
+      <a href="kien-eng-pascal-rithi-cv.pdf">CV:<i class="material-icons" style="font-size:40px;color: white" name="Cv">description</i></a>
+      <a href="https://www.linkedin.com/in/eng-pascal-kien-282a93197/"><i class="fa fa-linkedin-square" style="font-size:48px;color: white"></i></a>
+      <a href="https://github.com/pascal-rithi-ke"><i class="fa fa-git-square" style="font-size:48px;color: white"></i></a>
+  </footer>
+  </div>
+</body>
+</html>
